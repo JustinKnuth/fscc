@@ -9,6 +9,9 @@
 
 Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It is built using React.js on the front-end and Express/MongoDB on the back-end. On the website, you can find coffee/espresso machines and more. Users can signup and login to add or edit their favorite coffee tools. The homepage will feature a carousel of cool pictures of coffee and coffee machines. The products page will list products with links to more details about each product.
 
+## Github Projects Page
+
+[Github Projects Page](https://github.com/JustinKnuth/fscc/projects)
 
 ## Schema
 
