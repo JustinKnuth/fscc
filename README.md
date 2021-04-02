@@ -17,6 +17,7 @@ Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It i
 ## Schema
 
 ``` .json
+const Product = new Schema
 {
     name: { type: String, required: true },
     price: { type: String, required: true },
@@ -24,6 +25,13 @@ Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It i
     description: { type: String, required: true }
 
 }
+
+const User = new Schema
+  {
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true }
+  }
 ```
 
 
