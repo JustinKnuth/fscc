@@ -59,4 +59,8 @@ Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It i
 
 
 ## Comments
+Paul Moschetti
+Molly Exten
+Dylan Ross
+Justin Knuth
 
