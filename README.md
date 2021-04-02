@@ -64,4 +64,3 @@ Molly Exten
 Dylan Ross
 Justin Knuth
 
-## Change Log
