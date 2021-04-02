@@ -17,8 +17,7 @@ Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It i
     name: { type: String, required: true },
     price: { type: String, required: true },
     imgURL: { type: String, required: true },
-    description: { type: String, required: true },
-    instructions: { type: String, required: true }
+    description: { type: String, required: true }
 
 }
 ```
