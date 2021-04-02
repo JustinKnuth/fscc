@@ -25,6 +25,8 @@ Full Stack Coffee Co. is a an online e-commerce coffee machine distributor. It i
 
 ## Whimsical Diagram
 
+  [Link to whimsical diagram](https://whimsical.com/full-stack-coffee-co-KEu9CGnX5UZUkVeXmNbWjC)
+
 
 
 ## Team Expectations 
