@@ -35,7 +35,7 @@ const alwaysOptions = (
 const Nav = ({ user }) => {
   return (
     <nav>
-      <img className="logo" src="/fscclogo.png" alt="logo" />
+      <img className="logo" src="/fscclogolight.png" alt="logo" />
 
       <div className="nav">
         <NavLink to="/">

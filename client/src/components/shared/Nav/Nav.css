@@ -8,7 +8,6 @@ nav {
   border-bottom-style:groove;
   border-bottom-color: black;
   border-width: 5px;
-  
 }
 
 
@@ -18,6 +17,7 @@ nav {
   width: 100%;
   justify-content: space-between;
   /* padding: 20px; */
+
 }
 .logo{
   justify-content: center;
@@ -31,6 +31,7 @@ nav {
   font-size: 40px;
   margin-top: -100px;
   margin-left: 20px;
+  
 }
 
 a {
