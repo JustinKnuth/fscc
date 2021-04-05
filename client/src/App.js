@@ -3,7 +3,8 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css'
 import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
-import Nav from "./components/shared/Nav/Nav"
+import SignIn from "./screens/SignIn/SignIn"
+import SignUp from "./screens/SignUp/SignUp";
 
 function App() {
   const [user, setUser] = useState(null)
@@ -21,13 +22,14 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
       <Switch>
         <Route exact path="/">
         </Route>
         <Route path="/sign-up">
+          <SignUp />
         </Route>
         <Route path="/sign-in">
+          <SignIn />
         </Route>
         <Route path="/sign-out">
         </Route>
