@@ -1,0 +1,28 @@
+nav {
+  background-color: #f1c587;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+
+.nav-header {
+  color:black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links {
+  
+}
