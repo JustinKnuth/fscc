@@ -35,9 +35,12 @@ const alwaysOptions = (
 const Nav = ({ user }) => {
   return (
     <nav>
+      <img className="logo" src="/fscclogo.png" alt="logo" />
+
       <div className="nav">
-        <NavLink className="logo" to="/">
+        <NavLink to="/">
           <h1 className="nav-header">full stack coffee co.</h1>
+
         </NavLink>
         <div className="links">
           {/* If there is a user, render Welcome <user> */}
