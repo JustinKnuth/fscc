@@ -10,7 +10,6 @@ nav {
   border-bottom-style:groove;
   border-bottom-color: black;
   border-width: 5px;
-  
 }
 
 
@@ -20,6 +19,7 @@ nav {
   width: 100%;
   justify-content: space-between;
   /* padding: 20px; */
+
 }
 .logo{
   justify-content: center;
