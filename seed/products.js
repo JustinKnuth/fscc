@@ -9,7 +9,7 @@ const main = async () => {
       "name": "Espresso machine",
       "price": "6000",
       "imgURL":
-        "https://files.slack.com/files-pri/T0351JZQ0-F01TTPMLEJC/lamarzzy.png",
+        "https://home.lamarzoccousa.com/wp-content/uploads/2018/11/2973.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -17,7 +17,7 @@ const main = async () => {
       "name": "Moka pot",
       "price": "25",
       "imgURL":
-        "https://www.surlatable.com/dw/image/v2/BCJL_PRD/on/demandware.static/-/Sites-shop-slt-[…]c/images/large/464834_01K_0519_s.jpg?sw=1350&sh=1000&sm=fit",
+        "https://www.surlatable.com/dw/image/v2/BCJL_PRD/on/demandware.static/-/Sites-shop-slt-master-catalog/default/dw2ae7cbdc/images/large/464834_01K_0519_s.jpg",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -25,7 +25,7 @@ const main = async () => {
       "name": "Kalita",
       "price": "33",
       "imgURL":
-        "https://files.slack.com/files-pri/T0351JZQ0-F01TA5JCK28/kalita.jpg",
+        "https://kalita.space/img/files/item_main/2/6/2650/image.jpg",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -33,7 +33,7 @@ const main = async () => {
       "name": "EK-43",
       "price": "2500",
       "imgURL":
-        "https://files.slack.com/files-pri/T0351JZQ0-F01TTQK2LF2/download/ek.webp",
+        "https://rent.ekuep.com/wp-content/uploads/2018/04/mahlkonig-ek43-quarter.jpg",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -41,7 +41,7 @@ const main = async () => {
       "name": "Fellow Kettle",
       "price": "150",
       "imgURL":
-        "https://files.slack.com/files-pri/T0351JZQ0-F01SP772LLX/fellow.jpg",
+        "https://2tkcpbu2i5t4e7gjsc4tvs17-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/SCC_FellowKettle_01-scaled.jpg",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
