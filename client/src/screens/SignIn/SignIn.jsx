@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { signIn } from '../../services/users'
 import { useHistory } from 'react-router-dom';
 
-const signIn = (props) => {
+const SignIn = (props) => {
   const history = useHistory()
 
   const [form, setForm] = useState({
