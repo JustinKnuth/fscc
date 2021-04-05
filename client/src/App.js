@@ -5,6 +5,8 @@ import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
 import SignIn from "./screens/SignIn/SignIn"
 import SignUp from "./screens/SignUp/SignUp";
+import Home from './screens/Home/Home';
+import ProductDetail from "./screens/ProductDetail/ProductDetail"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -24,6 +26,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
+          <Home/>
         </Route>
         <Route path="/sign-up">
           <SignUp />
@@ -41,6 +44,7 @@ function App() {
         <Route exact path="/products/:id/edit">
         </Route>
         <Route exact path="/products/:id">
+          <ProductDetail/>
         </Route>
       </Switch>
     </div>
