@@ -7,6 +7,7 @@ import SignIn from "./screens/SignIn/SignIn"
 import SignUp from "./screens/SignUp/SignUp";
 import Home from './screens/Home/Home';
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
+import Form from "./screens/Form/Form"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -40,8 +41,10 @@ function App() {
           <Products/>
         </Route>
         <Route path="/add-product">
+          <Form/>
         </Route>
         <Route exact path="/products/:id/edit">
+          <Form/>
         </Route>
         <Route exact path="/products/:id">
           <ProductDetail/>
