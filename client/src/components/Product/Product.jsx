@@ -1,6 +1,6 @@
-import React from 'react'
-import "./Product.css"
-import { Link } from "react-router-dom"
+import React from "react";
+import "./Product.css";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
   return (
@@ -8,9 +8,9 @@ const Product = (props) => {
       <Link className="product" to={`/products/${props._id}`}>
         <img className="product-image" src={props.imgURL} alt={props.name} />
         <h3 className="product-name">{props.name}</h3>
-  </Link>
-  </>
-  )
-}
+      </Link>
+    </>
+  );
+};
 
-export default Product
+export default Product;
