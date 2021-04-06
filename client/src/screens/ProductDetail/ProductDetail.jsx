@@ -1,44 +1,83 @@
-import { useState, useEffect } from 'react'
-import './ProductDetail.css'
-import Layout from '../../components/shared/Layout/Layout'
-import { getProduct, deleteProduct } from '../../services/products'
-import { useParams, Link } from 'react-router-dom'
+import { useState, useEffect } from "react";
+import "./ProductDetail.css";
+import Layout from "../../components/shared/Layout/Layout";
+import { getProduct, deleteProduct } from "../../services/products";
+import { useParams, Link } from "react-router-dom";
 
 const ProductDetail = (props) => {
+  const [product, setProduct] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
+  const { id } = useParams();
 
-    const [product, setProduct] = useState(null)
-    const [isLoaded, setLoaded] = useState(false)
-    const { id } = useParams()
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const product = await getProduct(id);
+      setProduct(product);
+      setLoaded(true);
+    };
+    fetchProduct();
+  }, [id]);
 
-    useEffect(() => {
-        const fetchProduct = async () => {
-            const product = await getProduct(id)
-            setProduct(product)
-            setLoaded(true)
-        }
-        fetchProduct()
-    }, [id])
+  // const authenticatedOptions = (
+  //   <>
+  //     <button className="edit-button">
+  //       <Link className="edit-link" to={`/products/${product._id}/edit`}>
+  //         edit
+  //       </Link>
+  //     </button>
+  //     <button
+  //       className="delete-button"
+  //       onClick={() => deleteProduct(product._id)}
+  //     >
+  //       delete
+  //     </button>
+  //   </>
+  // );
 
-    if (!isLoaded) {
-        return <h1>Loading...</h1>
-    }
+  // const unauthenticatedOptions = (
+  //   <>
+  //   <h3>please sign in to make changes.</h3>
+  //   </>
+  // );
 
-    return (
-        <Layout user={props.user}>
-            <div className="product-detail">
-                <img className="product-detail-image" src={product.imgURL} alt={product.name} />
-                <div className="detail">
-                    <div className="name">{product.name}</div>
-                    <div className="price">{`$${product.price}`}</div>
-                    <div className="description">{product.description}</div>
-                    <div className="button-container">
-                        <button className="edit-button"><Link className="edit-link" to={`/products/${product._id}/edit`}>edit</Link></button>
-                        <button className="delete-button" onClick={() => deleteProduct(product._id)}>delete</button>
-                    </div>
-                </div>
+  if (!isLoaded) {
+    return <h1>Loading...</h1>;
+  }
+
+  return (
+    <Layout user={props.user}>
+      <div className="product-detail">
+        <img
+          className="product-detail-image"
+          src={product.imgURL}
+          alt={product.name}
+        />
+        <div className="detail">
+          <div className="name">{product.name}</div>
+          <div className="price">{`$${product.price}`}</div>
+          <div className="description">{product.description}</div>
+          {props.user && (
+            <div className="button-container">
+              <button className="edit-button">
+                <Link
+                  className="edit-link"
+                  to={`/products/${product._id}/edit`}
+                >
+                  edit
+                </Link>
+              </button>
+              <button
+                className="delete-button"
+                onClick={() => deleteProduct(product._id)}
+              >
+                delete
+              </button>
             </div>
-        </Layout>
-    )
-}
+          )}
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;

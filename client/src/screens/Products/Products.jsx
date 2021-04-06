@@ -4,7 +4,7 @@ import Product from "../../components/Product/Product";
 import { getProducts } from "../../services/products";
 import Layout from "../../components/shared/Layout/Layout";
 
-const Products = () => {
+const Products = (props) => {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Products = () => {
   ));
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <h3>Products</h3>
       <div className="products-container">
         <div>{productsJSX}</div>
