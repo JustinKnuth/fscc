@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1461988091159-192b6df7054f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1652&q=80");
+  
+}
+
+
+.brand {
+  display: flex;
+  margin-top: 250px;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+  height: 50%;
+  margin-left: 10%;
+  justify-content: space-around;
+}
+
+
+#statement {
+  background-color: rgb(130, 130, 130, .7);
+  height: fit-content;
+  width: 600px;
+  margin-top: 20px;
+  border: black 1px solid;
+}
+
+h2#shop {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(130, 130, 130, .5);
+  border: black 1px solid;
+  width: 100px;
+  height: 40px;
+}
+

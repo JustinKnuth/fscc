@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap');
+
+nav {
+  background-color: #f1c587;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom-style:groove;
+  border-bottom-color: black;
+  border-width: 5px;
+}
+
+
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 20px; */
+
+}
+.logo{
+  justify-content: center;
+  width: 150px;
+}
+
+
+
+.nav-header {
+  color:black;
+  font-size: 40px;
+  margin-top: -100px;
+  margin-left: 20px;
+  font-family: 'Vollkorn', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+.links {
+  font-size: 25px;
+  margin-top: -87px;  
+  
+}
+
+@media screen and (max-width: 915px){
+  .links{
+    font-size: 20px;
+    margin-top: -80px;
+  }
+  .nav-header{
+    font-size: 30px;
+    margin-top:-89px;
+  }
+    
+}
+
+@media screen and (max-width: 720px){
+  .links{
+    font-size: 15px;
+    margin-top: -75px;
+    
+  }
+  .nav-header{
+    font-size: 20px;
+    margin-top: -79px;
+  }
+
+
+}
+
+@media screen and (max-width: 640px){
+  .nav-header{
+    color:#f1c587;
+   visibility: hidden;
+  }
+  .logo{
+    float: left;
+  }
+  .links{
+    font-size:20px;
+  }
+}

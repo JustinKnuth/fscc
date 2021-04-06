@@ -1,0 +1,9 @@
+.products-container {
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 2px solid white;
+}
+
