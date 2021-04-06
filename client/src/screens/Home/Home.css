@@ -6,22 +6,24 @@ html {
 
 .brand {
   display: flex;
-  margin-top: 250px;
   flex-direction: column;
   text-align: left;
   width: 45%;
   height: 50%;
   margin-left: 10%;
   justify-content: space-around;
+  
 }
 
 
 #statement {
-  background-color: rgb(130, 130, 130, .7);
+  background-color: rgb(130, 130, 130, .5);
   height: fit-content;
   width: 600px;
   margin-top: 20px;
   border: black 1px solid;
+  position: absolute;
+  top: 350px;
 }
 
 h2#shop {
@@ -31,6 +33,20 @@ h2#shop {
   border: black 1px solid;
   width: 100px;
   height: 40px;
+  position: absolute;
+  top: 280px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 45vw;
+  
+}
+
+button {
+  visibility: hidden;
 }
 
 
