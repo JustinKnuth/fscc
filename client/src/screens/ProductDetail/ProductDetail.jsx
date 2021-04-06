@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import "./ProductDetail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
-import { useParams, Link } from "react-router-dom";
+import { useHistory, useParams, Link } from "react-router-dom";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -18,27 +19,11 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
-  // const authenticatedOptions = (
-  //   <>
-  //     <button className="edit-button">
-  //       <Link className="edit-link" to={`/products/${product._id}/edit`}>
-  //         edit
-  //       </Link>
-  //     </button>
-  //     <button
-  //       className="delete-button"
-  //       onClick={() => deleteProduct(product._id)}
-  //     >
-  //       delete
-  //     </button>
-  //   </>
-  // );
-
-  // const unauthenticatedOptions = (
-  //   <>
-  //   <h3>please sign in to make changes.</h3>
-  //   </>
-  // );
+  const handleSub = async (e) => {
+    e.preventDefault();
+    await deleteProduct(product._id);
+    history.push("/products");
+  };
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
@@ -66,11 +51,8 @@ const ProductDetail = (props) => {
                   edit
                 </Link>
               </button>
-              <button
-                className="delete-button"
-                onClick={() => deleteProduct(product._id)}
-              >
-                delete
+              <button className="delete-button" onClick={handleSub}>
+                Delete
               </button>
             </div>
           )}
