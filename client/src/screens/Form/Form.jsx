@@ -56,11 +56,14 @@ function Form() {
     return <Redirect to={`/products/${id}`} />;
   }
 
+  
   return (
     <>
       <Layout>
         <div className="form">
-          <h3 className="form-title">Create / Edit Product</h3>
+          <div className="form-title">
+            {!isCreated ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
+          </div>
           <form onSubmit={handleSubmit} className="form-container">
             <input
               type="text"
@@ -83,7 +86,7 @@ function Form() {
               name="imgURL"
               value={product.imgURL}
               onChange={handleChange}
-              placeholder="image URL"
+              placeholder="image url"
               className="img-input"
             />
             <textarea
