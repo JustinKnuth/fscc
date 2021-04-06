@@ -30,7 +30,7 @@
   align-items: stretch;
   justify-content: space-evenly;
   box-shadow: 2px 2px 10px 2px #CECECE;
-
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .name-input, .price-input, .img-input, .description-input{
