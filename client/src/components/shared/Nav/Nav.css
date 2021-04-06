@@ -74,7 +74,7 @@ a {
 
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 640px){
   .nav-header{
     color:#f1c587;
    visibility: hidden;
@@ -83,6 +83,6 @@ a {
     float: left;
   }
   .links{
-    font-size:25px;
+    font-size:20px;
   }
 }
