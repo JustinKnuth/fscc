@@ -11,20 +11,20 @@
   /* flex-: hidden; */
 }
 
-.form-title {
+.title-container {
   font-size: 70px;
   font-family: 'Vollkorn', serif;
   text-shadow: 2px 2px #CECECE;
 }
 
-h3 {
-  /* margin: 30px 0 0 0; */
+h3.form-title {
+  margin: 0 auto;
 }
 
 .form-container {
   border: solid 1px;
   width: 40%;
-  height: 50%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
@@ -38,7 +38,7 @@ h3 {
   padding: 20px;
   border: solid 1px;
   box-shadow: 2px 2px 10px 2px #CECECE;
-  background-color:rgba(255, 255, 255, 0.5);
+  /* background-color:rgba(255, 255, 255, 0.5); */
   font-size: 20px;
 }
 
@@ -60,34 +60,75 @@ h3 {
 @media (max-width: 1025px) {
 
 .form {
-  padding-top: 50px;
+  width: 100vw;
 }
 
   .form-container {
-    width: 60%;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
 
   .name-input, .price-input, .img-input, .description-input {
-    padding: 40px;
+    padding: 10px;
     font-size: 30px;
   }
 
   .sub-button {
-    width: 20rem;
-    height: 2em;
+    width: 15rem;
+    height: 4rem;
     font-size: 50px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .name-input, .price-input, .img-input, .description-input {
-    padding: 10px;
+    padding: 8px;
   }
 
   .sub-button {
     width: 15rem;
     font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+
+.form {
+  height: 78vh;
+}
+
+.form-container {
+  padding: 0 20px;
+}
+
+  .title-container {
+    font-size: 50px;
+  }
+
+  .name-input, .price-input, .img-input, .description-input {
+    font-size: 15px;
+  }
+
+  .sub-button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .form {
+    box-sizing: content-box;
+    width: 90vw;
+  }
+
+  .title-container {
+    line-height: 3.5rem;
+    /* margin-bottom: 4rem; */
+    padding-bottom: 20px;
+  }
+
+  .form-container {
+    width: 20rem;
   }
 }
 

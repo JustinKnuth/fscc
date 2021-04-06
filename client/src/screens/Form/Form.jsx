@@ -61,8 +61,8 @@ function Form(props) {
     <>
       <Layout user={props.user}>
         <div className="form">
-          <div className="form-title">
-            {id ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
+          <div className="title-container">
+            {id ? <h3 className="form-title">edit product</h3> : <h3 className="form-title">create product</h3>}
           </div>
           <form onSubmit={handleSubmit} className="form-container">
             <input
