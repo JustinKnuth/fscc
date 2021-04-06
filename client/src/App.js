@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home/>
+          <Home user={user}/>
         </Route>
         <Route path="/sign-up">
           <SignUp setUser={setUser}/>
@@ -38,16 +38,16 @@ function App() {
         <Route path="/sign-out">
         </Route>
         <Route exact path="/products">
-          <Products/>
+          <Products user={user}/>
         </Route>
         <Route path="/add-product">
-          <Form/>
+          <Form user={user}/>
         </Route>
         <Route exact path="/products/:id/edit">
-          <Form/>
+          <Form user={user}/>
         </Route>
         <Route exact path="/products/:id">
-          <ProductDetail/>
+          <ProductDetail user={user}/>
         </Route>
       </Switch>
     </div>

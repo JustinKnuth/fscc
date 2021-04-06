@@ -7,7 +7,6 @@ import "./SignIn.css"
 const SignIn = (props) => {
   console.log(props)
   const history = useHistory()
-  const [user, setUser] = useState("")
 
   const [form, setForm] = useState({
     username: '',

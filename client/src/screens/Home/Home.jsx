@@ -4,10 +4,10 @@ import Layout from '../../components/shared/Layout/Layout';
 import Carousel from 'nuka-carousel';
 import './Home.css'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="bg-image">
-      <Layout>
+      <Layout user={props.user}>
         <div className="brand">
           <div  className="carousel">
           <Carousel>
