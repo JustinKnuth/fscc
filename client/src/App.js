@@ -5,6 +5,7 @@ import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
 import SignIn from "./screens/SignIn/SignIn"
 import SignUp from "./screens/SignUp/SignUp";
+import SignOut from "./screens/SignOut/SignOut";
 import Home from './screens/Home/Home';
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
 import Form from "./screens/Form/Form"
@@ -36,6 +37,7 @@ function App() {
           <SignIn setUser={setUser}/>
         </Route>
         <Route path="/sign-out">
+          <SignOut clearUser={clearUser} setUser={setUser}/>
         </Route>
         <Route exact path="/products">
           <Products user={user}/>
