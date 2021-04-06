@@ -62,7 +62,7 @@ function Form() {
       <Layout>
         <div className="form">
           <div className="form-title">
-            {!isCreated ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
+            {id ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
           </div>
           <form onSubmit={handleSubmit} className="form-container">
             <input
