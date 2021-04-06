@@ -30,10 +30,10 @@ function App() {
           <Home/>
         </Route>
         <Route path="/sign-up">
-          <SignUp />
+          <SignUp setUser={setUser}/>
         </Route>
         <Route path="/sign-in">
-          <SignIn />
+          <SignIn setUser={setUser}/>
         </Route>
         <Route path="/sign-out">
         </Route>
