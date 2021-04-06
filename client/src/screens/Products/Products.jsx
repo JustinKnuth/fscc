@@ -34,9 +34,8 @@ const Products = (props) => {
 
   return (
     <Layout user={props.user}>
-      <h3>Products</h3>
-      <div className="products-container">
-        <div>{productsJSX}</div>
+      <div className="products-screen-container">
+        <div className="products-container">{productsJSX}</div>
       </div>
     </Layout>
   );
