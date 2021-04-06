@@ -5,7 +5,9 @@ import Layout from "../../components/shared/Layout/Layout"
 import "./SignIn.css"
 
 const SignIn = (props) => {
+  console.log(props)
   const history = useHistory()
+  const [user, setUser] = useState("")
 
   const [form, setForm] = useState({
     username: '',
@@ -23,7 +25,7 @@ const SignIn = (props) => {
 
   const onSignIn = event => {
     event.preventDefault()
-
+    console.log(props)
     const { setUser } = props
 
     signIn(form)
