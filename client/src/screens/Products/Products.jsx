@@ -34,8 +34,8 @@ const Products = () => {
 
   return (
     <Layout>
-      <div className="products">
-        <h3>Products</h3>
+      <h3>Products</h3>
+      <div className="products-container">
         <div>{productsJSX}</div>
       </div>
     </Layout>

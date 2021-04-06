@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-
-
-.products {
+.products-container {
   width: 90vw;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-family: Bitter;
-  padding: 40px;
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 2px solid white;
 }
 
