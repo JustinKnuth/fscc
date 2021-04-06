@@ -12,7 +12,13 @@ nav {
   border-width: 5px;
 }
 
-
+.user-welcome{
+  color: black;
+  margin-top: -30px;
+  padding: 3px 0;
+  font-size: 25px;
+  padding-bottom:30px;
+}
 
 .nav {
   display: flex;
@@ -26,12 +32,19 @@ nav {
   width: 150px;
 }
 
+.hamburger{
+  width:20px;
+  float: right;
+  visibility: hidden;
+}
+
 
 
 .nav-header {
   color:black;
   font-size: 40px;
   margin-top: -100px;
+  
   margin-left: 20px;
   font-family: 'Vollkorn', serif;
 }
@@ -46,9 +59,10 @@ a {
   font-size: 25px;
   margin-top: -87px;  
   
+  
 }
 
-@media screen and (max-width: 915px){
+@media screen and (max-width: 995px){
   .links{
     font-size: 20px;
     margin-top: -80px;
@@ -60,21 +74,21 @@ a {
     
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 830px){
   .links{
-    font-size: 15px;
+    font-size: 17px;
     margin-top: -75px;
     
   }
   .nav-header{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: -79px;
   }
 
 
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 700px){
   .nav-header{
     color:#f1c587;
    visibility: hidden;
@@ -85,4 +99,22 @@ a {
   .links{
     font-size:20px;
   }
+}
+
+@media screen and (max-width: 580px){
+  .links{
+    visibility: hidden;
+  
+  }
+  .hamburger{
+    visibility: visible;
+    width:60px;
+    margin-top:35px;
+    }
+    .links.user-welcome{
+      font-size:10px;
+    }
+
+
+
 }
