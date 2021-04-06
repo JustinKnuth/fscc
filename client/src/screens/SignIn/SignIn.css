@@ -13,11 +13,10 @@
   margin: 0 auto;
 }
 .signin-header {
-  font-family: 'Volkhorn', serif;
-  font-weight: 600;
-  font-size: 68px;
-  margin: 0px;
-  width: 100%;
+  margin: 15px 0 10px 0;
+  font-size: 70px;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 2px 2px #CECECE;
 }
 
 .signin-form-container {
@@ -27,12 +26,14 @@
   grid-template-columns: 1fr 100px 1fr;
   margin-top: 20px;
   padding: 30px 20px;
-  border: 2px rgb(191, 191, 191) solid;
+  border: 1px solid;
+  box-shadow: 2px 2px 10px 2px #CECECE;
   row-gap: 25px;
 }
 
 .signin-username, .signin-password {
-  border: 2px rgb(191, 191, 191) solid;
+  border: 1px solid;
+  box-shadow: 2px 2px 10px 2px #CECECE;
   padding-left: 15px;
   grid-column: 1 / span 3;
   font-size: 22px;

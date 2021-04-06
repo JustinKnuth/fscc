@@ -5,6 +5,7 @@ import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
 import SignIn from "./screens/SignIn/SignIn"
 import SignUp from "./screens/SignUp/SignUp";
+import SignOut from "./screens/SignOut/SignOut";
 import Home from './screens/Home/Home';
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
 import Form from "./screens/Form/Form"
@@ -27,27 +28,28 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home/>
+          <Home user={user}/>
         </Route>
         <Route path="/sign-up">
-          <SignUp />
+          <SignUp setUser={setUser}/>
         </Route>
         <Route path="/sign-in">
-          <SignIn />
+          <SignIn setUser={setUser}/>
         </Route>
         <Route path="/sign-out">
+          <SignOut clearUser={clearUser} setUser={setUser}/>
         </Route>
         <Route exact path="/products">
-          <Products/>
+          <Products user={user}/>
         </Route>
         <Route path="/add-product">
-          <Form/>
+          <Form user={user}/>
         </Route>
         <Route exact path="/products/:id/edit">
-          <Form/>
+          <Form user={user}/>
         </Route>
         <Route exact path="/products/:id">
-          <ProductDetail/>
+          <ProductDetail user={user}/>
         </Route>
       </Switch>
     </div>

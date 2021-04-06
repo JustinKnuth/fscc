@@ -8,7 +8,7 @@ import {
 } from "../../services/products";
 import { useParams, Redirect } from "react-router-dom";
 
-function Form() {
+function Form(props) {
   const [isCreated, setCreated] = useState("");
   const [isUpdated, setIsUpdated] = useState(false);
   const [product, setProduct] = useState({
@@ -49,7 +49,7 @@ function Form() {
   };
 
   if (isCreated) {
-    return <Redirect to={`/products/${id}`} />;
+    return <Redirect to="/products" />;
   }
 
   if (isUpdated) {
@@ -59,7 +59,7 @@ function Form() {
   
   return (
     <>
-      <Layout>
+      <Layout user={props.user}>
         <div className="form">
           <div className="form-title">
             {id ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
