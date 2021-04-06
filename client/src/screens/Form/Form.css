@@ -1,0 +1,53 @@
+.form {
+  box-sizing: border-box;
+  /* border: solid 1px; */
+  height: 100vh;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  margin: 70px 0 20px 0;
+  font-size: 70px;
+  font-family: 'Vollkorn', serif;
+
+}
+
+.form-container {
+  border: solid 1px;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.name-input, .price-input, .img-input, .description-input{
+  /* margin: 50px, auto; */
+  padding: 10px;
+  border: solid 1px;
+}
+
+.sub-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 40px;
+  align-self: center;
+  margin-top: 40px;
+  background-color: #4E93B8;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #CECECE;
+  cursor: pointer;
+}
+
+
+
+
+
