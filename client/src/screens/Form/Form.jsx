@@ -49,7 +49,7 @@ function Form(props) {
   };
 
   if (isCreated) {
-    return <Redirect to={`/products/${id}`} />;
+    return <Redirect to="/products" />;
   }
 
   if (isUpdated) {
