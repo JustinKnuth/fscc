@@ -1,104 +1,112 @@
-import { useState } from 'react';
-import { signUp, signIn } from '../../services/users'
-import { useHistory } from 'react-router-dom';
+import { useState } from "react";
+import { signUp, signIn } from "../../services/users";
+import { useHistory } from "react-router-dom";
+import Layout from "../../components/shared/Layout/Layout";
+import "./SignUp.css";
 
 const SignUp = (props) => {
-  const history = useHistory()
+  const history = useHistory();
 
   const [form, setForm] = useState({
-    username: '',
-    email: '',
-    password: '',
-    passwordConfirmation: '',
+    username: "",
+    email: "",
+    password: "",
+    passwordConfirmation: "",
     isError: false,
-    errorMsg: ''
-  })
+    errorMsg: "",
+  });
 
-  const handleChange = event =>
+  const handleChange = (event) =>
     setForm({
       ...form,
-      [event.target.name]: event.target.value
-    })
-  
-  const onSignUp = event => {
-    event.preventDefault()
-    const { setUser } = props
-    
+      [event.target.name]: event.target.value,
+    });
+
+  const onSignUp = (event) => {
+    event.preventDefault();
+    const { setUser } = props;
+
     signUp(form)
       .then(() => signIn(form))
-      .then(user => setUser(user))
-      .then(() => history.push('/'))
-      .catch(error => {
-        console.error(error)
+      .then((user) => setUser(user))
+      .then(() => history.push("/"))
+      .catch((error) => {
+        console.error(error);
         setForm({
-          email: '',
-          password: '',
-          passwordConfirmation: '',
+          email: "",
+          password: "",
+          passwordConfirmation: "",
           isError: true,
-          errorMsg: 'Sign Up Details Invalid'
-        })
-      })
-  }
+          errorMsg: "Sign Up Details Invalid",
+        });
+      });
+  };
 
   const renderError = () => {
-    const toggleForm = form.isError ? 'danger' : ''
+    const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
         <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
-      )
+      );
     } else {
-      return <button type='submit' className='sub-butt'>Sign Up</button>
+      return (
+        <button type="submit" className="signup-submit">
+          sign up
+        </button>
+      );
     }
-  }
+  };
 
-  const { email, username, password, passwordConfirmation } = form
+  const { email, username, password, passwordConfirmation } = form;
 
   return (
-    <div className="form-container">
-            <h3>Sign Up</h3>
-            <form onSubmit={onSignUp}>
-                <label>Username</label>
-                <input
-                    required
-                    type="text"
-                    name="username"
-                    value={username}
-                    placeholder="Enter username"
-                    onChange={handleChange}
-                />
-                <label>Email address</label>
-                <input
-                    required
-                    type="email"
-                    name="email"
-                    value={email}
-                    placeholder="Enter email"
-                    onChange={handleChange}
-                />
-                <label>Password</label>
-                <input
-                    required
-                    name="password"
-                    value={password}
-                    type="password"
-                    placeholder="Password"
-                    onChange={handleChange}
-                />
-                <label>Password Confirmation</label>
-                <input
-                    required
-                    name="passwordConfirmation"
-                    value={passwordConfirmation}
-                    type="password"
-                    placeholder="Confirm Password"
-                    onChange={handleChange}
-                />
-                {renderError()}
-            </form>
-        </div>
-  )
-}
+    <Layout>
+      <div className="signup-form">
+        <h3 className="signup-header">sign up</h3>
+        <form className="signup-container" onSubmit={onSignUp}>
+          <input
+            required
+            type="text"
+            className="signup-username"
+            name="username"
+            value={username}
+            placeholder="username"
+            onChange={handleChange}
+          />
+          <input
+            required
+            type="email"
+            className="signup-email"
+            name="email"
+            value={email}
+            placeholder="email"
+            onChange={handleChange}
+          />
+          <input
+            required
+            name="password"
+            value={password}
+            type="password"
+            className="signup-password"
+            placeholder="password"
+            onChange={handleChange}
+          />
+          <input
+            required
+            name="passwordConfirmation"
+            className="signup-password-confirmation"
+            value={passwordConfirmation}
+            type="password"
+            placeholder="confirm password"
+            onChange={handleChange}
+          />
+          {renderError()}
+        </form>
+      </div>
+    </Layout>
+  );
+};
 
-export default SignUp
+export default SignUp;

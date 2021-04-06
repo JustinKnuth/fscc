@@ -44,6 +44,45 @@ a {
 
 .links {
   font-size: 25px;
-  margin-top: -90px;  
+  margin-top: -87px;  
   
+}
+
+@media screen and (max-width: 915px){
+  .links{
+    font-size: 20px;
+    margin-top: -80px;
+  }
+  .nav-header{
+    font-size: 30px;
+    margin-top:-89px;
+  }
+    
+}
+
+@media screen and (max-width: 720px){
+  .links{
+    font-size: 15px;
+    margin-top: -75px;
+    
+  }
+  .nav-header{
+    font-size: 20px;
+    margin-top: -79px;
+  }
+
+
+}
+
+@media screen and (max-width: 640px){
+  .nav-header{
+    color:#f1c587;
+   visibility: hidden;
+  }
+  .logo{
+    float: left;
+  }
+  .links{
+    font-size:20px;
+  }
 }
