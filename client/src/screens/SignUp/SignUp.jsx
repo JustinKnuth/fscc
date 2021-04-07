@@ -64,7 +64,7 @@ const SignUp = (props) => {
   return (
     <Layout>
       <div className="signup-form">
-        <h2 className="signup-header">sign up</h2>
+        <h3 className="signup-header">sign up</h3>
         <form className="signup-container" onSubmit={onSignUp}>
           <input
             required

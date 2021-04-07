@@ -36,7 +36,7 @@ const Products = (props) => {
   return (
     <Layout user={props.user}>
       <div className="products-screen-container">
-        <h2 className="products-title">Products</h2>
+        <h3 className="products-title">Products</h3>
         <div className="products-container">{productsJSX}</div>
       </div>
     </Layout>
