@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 
 .brand {
   display: flex;
@@ -48,6 +44,10 @@ h2#shop {
 .slider-control-centerright,
 .slider-control-centerleft {
   visibility: hidden;
+}
+
+.slider-frame {
+  padding-bottom: 100px;
 }
 
 
