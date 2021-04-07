@@ -20,11 +20,3 @@ export default function AuthenticatedOptions () {
  
 
 
-//  export const alwaysOptions = (
-//   <>
-//     <NavLink className="link" to="/products">
-//       Products
-//     </NavLink>
-//   </>
-// );
-
