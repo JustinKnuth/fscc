@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  /* height: 100%; */
+}
 
 .brand {
   display: flex;
@@ -7,30 +12,31 @@
   height: 50%;
   margin-left: 10%;
   justify-content: space-around;
-  
 }
 
-
 #statement {
-  background-color: rgb(130, 130, 130, .5);
+  background-color: rgb(130, 130, 130, 0.5);
   height: fit-content;
-  width: 600px;
+  width: 45%;
   margin-top: 20px;
   border: black 1px solid;
   position: absolute;
-  top: 350px;
+  top: 280px;
   padding-left: 10px;
+  line-height: 60px;
+  border-radius: 5px;
 }
 
 h2#shop {
   display: flex;
   justify-content: center;
-  background-color: rgb(130, 130, 130, .5);
+  background-color: rgb(130, 130, 130, 0.5);
   border: black 1px solid;
   width: 100px;
   height: 40px;
   position: absolute;
-  top: 280px;
+  top: 200px;
+  border-radius: 4px;
 }
 
 .carousel {
@@ -38,7 +44,6 @@ h2#shop {
   flex-direction: column;
   width: 100vw;
   height: 45vw;
-  
 }
 
 .slider-control-centerright,
@@ -46,9 +51,34 @@ h2#shop {
   visibility: hidden;
 }
 
-.slider-frame {
-  padding-bottom: 100px;
+
+@media screen and (max-width: 1030px) {
+  #statement {
+    display: flex;
+    width: 97vw;
+    top: 577px;
+    margin-left: -99px;
+    
+  }
+  h2#shop {
+    visibility: hidden;
+  }
 }
 
+@media screen and (max-width: 400px) {
+  #statement {
+    position: unset;
+    width: 100vw;
+    margin-left: 72%;
+    height: fit-content;
+    align-self: center;
+    line-height: 40px;
+    margin-top: -10px;
+    background-color: #4e93b85a;
+  }
 
-
+  #statement h2{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
