@@ -62,7 +62,7 @@ const SignIn = (props) => {
     <Layout>
       <div className="signin-form">
             <h3 className="signin-header">sign in</h3>
-            <form className="signin-form-container" onSubmit={onSignIn}>
+            <form className="signin-container" onSubmit={onSignIn}>
                 <input
             required
             type="text"
