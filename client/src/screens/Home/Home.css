@@ -1,16 +1,15 @@
 html {
   box-sizing: border-box;
   padding: 0;
-  /* height: 100%; */
 }
 
 .brand {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 45%;
+  width: 100%;
   height: 50%;
-  margin-left: 10%;
+  margin-left: 110px;
   justify-content: space-around;
 }
 
@@ -88,9 +87,8 @@ div.slider-control-bottomcenter{
 @media screen and (max-width: 1057px) {
   #statement {
     display: flex;
-    width: 97vw;
+    width: 96.7vw;
     top: 577px;
-    margin-left: -70px;
     position: unset;
     
   }
@@ -98,14 +96,15 @@ div.slider-control-bottomcenter{
     visibility: hidden;
   }
 
-  
+  .brand{
+    margin: unset;
+  }
 }
 
 @media screen and (max-width: 400px) {
   #statement {
     position: unset;
     width: 100vw;
-    margin-left: 72%;
     height: fit-content;
     align-self: center;
     line-height: 40px;
