@@ -12,7 +12,13 @@ nav {
   border-width: 5px;
 }
 
-
+.user-welcome{
+  color: black;
+  margin-top: -30px;
+  padding: 3px 0;
+  font-size: 25px;
+  padding-bottom:20px;
+}
 
 .nav {
   display: flex;
@@ -26,12 +32,40 @@ nav {
   width: 150px;
 }
 
+.hamburger{
+  width:20px;
+  float: right;
+  visibility: hidden;
+  margin-right: 20px;
+}
+
+
+
+.nav-items{
+  background-color:rgba(208,180,159,.98);
+  color: black;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin-top: -15px;
+  border-style: groove;
+  border-color:black;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-evenly;
+  font-weight:1000;
+  font-size: 20px;
+}
+
+
 
 
 .nav-header {
   color:black;
   font-size: 40px;
   margin-top: -100px;
+  
   margin-left: 20px;
   font-family: 'Vollkorn', serif;
 }
@@ -46,9 +80,10 @@ a {
   font-size: 25px;
   margin-top: -87px;  
   
+  
 }
 
-@media screen and (max-width: 915px){
+@media screen and (max-width: 995px){
   .links{
     font-size: 20px;
     margin-top: -80px;
@@ -57,24 +92,30 @@ a {
     font-size: 30px;
     margin-top:-89px;
   }
+  .user-welcome{
+    margin-top: -35px;
+  }
     
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 830px){
   .links{
-    font-size: 15px;
+    font-size: 17px;
     margin-top: -75px;
     
   }
   .nav-header{
-    font-size: 20px;
-    margin-top: -79px;
+    font-size: 26px;
+    margin-top: -88px;
+  }
+  .user-welcome{
+    margin-top: -40px;
   }
 
 
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 700px){
   .nav-header{
     color:#f1c587;
    visibility: hidden;
@@ -83,6 +124,25 @@ a {
     float: left;
   }
   .links{
-    font-size:20px;
+    font-size:17px;
   }
+}
+
+@media screen and (max-width: 582px){
+  .links{
+    visibility: hidden;
+  
+  }
+  .hamburger{
+    visibility: visible;
+    width:60px;
+    margin-top:35px;
+    
+    }
+    .links>{
+      font-size:10px;
+    }
+
+
+
 }

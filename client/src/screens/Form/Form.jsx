@@ -61,9 +61,9 @@ function Form(props) {
     <>
       <Layout user={props.user}>
         <div className="form">
-          <div className="form-title">
-            {id ? <h3>Edit Product</h3> : <h3>Create Product</h3>}
-          </div>
+          {/* <div className="title-container"> */}
+            {id ? <h3 className="form-title">edit product</h3> : <h3 className="form-title">create product</h3>}
+          {/* </div> */}
           <form onSubmit={handleSubmit} className="form-container">
             <input
               type="text"
@@ -90,11 +90,12 @@ function Form(props) {
               className="img-input"
             />
             <textarea
+              
               name="description"
               value={product.description}
               onChange={handleChange}
               placeholder="description"
-              className="name-input"
+              className="description-input"
               rows="6"
             />
             <button type="submit" className="sub-button">

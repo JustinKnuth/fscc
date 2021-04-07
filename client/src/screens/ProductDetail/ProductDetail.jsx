@@ -10,6 +10,7 @@ const ProductDetail = (props) => {
   const { id } = useParams();
   const history = useHistory();
 
+  // When the id is retrived from params, make axios get request and update product
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
@@ -19,12 +20,15 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
-  const handleSub = async (e) => {
+  /* Clicking the delete button triggers this event, which deletes the product 
+  from the API and redirects to the products page */
+  const deleteProd = async (e) => {
     e.preventDefault();
     await deleteProduct(product._id);
     history.push("/products");
   };
 
+  // If the product takes a long time to load, display this
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
@@ -37,10 +41,11 @@ const ProductDetail = (props) => {
           src={product.imgURL}
           alt={product.name}
         />
-        <div className="detail">
-          <div className="name">{product.name}</div>
-          <div className="price">{`$${product.price}`}</div>
-          <div className="description">{product.description}</div>
+        <div className="product-detail-text">
+          <div className="product-detail-name">{product.name}</div>
+          <div className="product-detail-price">{`$${product.price}`}</div>
+          <div className="product-detail-description">{product.description}</div>
+          {/* If user props were passed into this screen, display the edit and delete buttons */}
           {props.user && (
             <div className="button-container">
               <button className="edit-button">
@@ -51,8 +56,8 @@ const ProductDetail = (props) => {
                   edit
                 </Link>
               </button>
-              <button className="delete-button" onClick={handleSub}>
-                Delete
+              <button className="delete-button" onClick={deleteProd}>
+                delete
               </button>
             </div>
           )}
@@ -62,4 +67,4 @@ const ProductDetail = (props) => {
   );
 };
 
-export default ProductDetail;
+export default ProductDetail; 
