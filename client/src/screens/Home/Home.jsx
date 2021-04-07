@@ -4,7 +4,6 @@ import Layout from "../../components/shared/Layout/Layout";
 import Carousel from "nuka-carousel";
 import "./Home.css";
 
-
 export default function Home(props) {
   const [autoplay, setAutoplay] = useState(false);
   const [wrapAround, setWrapAround] = useState(false);
@@ -18,7 +17,6 @@ export default function Home(props) {
   }, []);
 
   return (
-    
     <div className="bg-image">
       <Layout user={props.user}>
         <div className="carousel">
@@ -63,16 +61,7 @@ export default function Home(props) {
             </h2>
           </div>
         </div>
-        
       </Layout>
-      
-    
-    
-      
-
-
-    
-  )
       <div className="brand-pic">
         <img
           id="hario"
