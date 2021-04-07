@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap");
 
-.layout {
+/* .layout {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .signup-form {
   background-color: white;
