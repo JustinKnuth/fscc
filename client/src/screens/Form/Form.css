@@ -17,19 +17,22 @@
 }
 
 .form-container {
-  width: 350px;
+  width: 20em;
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, .3fr);
   grid-template-columns: repeat(7, 1fr);
   margin-top: 20px;
   padding: 30px 20px;
   border: 1px solid;
+  border-radius: 3px;
+  background-color: rgba(221, 220, 220, 0.1);
   box-shadow: 2px 2px 10px 2px #CECECE;
   row-gap: 25px;
 }
 
 .name-input, .price-input, .img-input, .description-input {
-  border: solid 1px;
+  border: solid 1px grey;
+  border-radius: 3px;
   box-shadow: 2px 2px 10px 2px #CECECE;
   padding-left: 15px;
   font-size: 1.5em;
@@ -58,6 +61,7 @@
     background-color: #4E93B8;
     color: white;
     border: none;
+    border-radius: 3px;
     box-shadow: 2px 2px 10px 2px #CECECE;
     cursor: pointer;
     grid-row: 6 / 7;
@@ -71,148 +75,24 @@
 }
 
 @media (max-width: 567px) {
-
-}
-
-
-@media (max-width: 349px) {
-  .signup-container {
-    width: 100%;
-    border: none;
-    box-shadow: none;
-  }
-}
-
-
-/* .form {
-  box-sizing: border-box;
-  height: 82vh;
-  width: 70vw;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.title-container {
-  font-size: 70px;
-  font-family: 'Vollkorn', serif;
-  text-shadow: 2px 2px #CECECE;
-}
-
-h3.form-title {
-  margin: 0 auto;
-}
-
-.form-container {
-  border: solid 1px;
-  width: 40%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px;
-  align-items: stretch;
-  justify-content: space-evenly;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-}
-
-.name-input, .price-input, .img-input, .description-input{
-  box-sizing: content-box;
-  padding: 20px;
-  border: solid 1px;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  font-size: 20px;
-}
-
-.sub-button {
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  width: 8rem;
-  height: 3rem;
-  align-self: center;
-  background-color: #4E93B8;
-  color: white;
-  border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  cursor: pointer;
-}
-
-
-@media (max-width: 1025px) {
-
-.form {
-  width: 100vw;
-}
-
-  .form-container {
-    padding: 0 50px;
-  }
-
-  .name-input, .price-input, .img-input, .description-input {
-    padding: 10px;
-    font-size: 30px;
-  }
-
-  .sub-button {
-    width: 15rem;
-    height: 4rem;
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 769px) {
-  .name-input, .price-input, .img-input, .description-input {
-    padding: 8px;
-  }
-
-  .sub-button {
-    width: 15rem;
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-
-.form {
-  height: 78vh;
-}
-
-.form-container {
-  padding: 0 20px;
-}
-
-  .title-container {
-    font-size: 50px;
-  }
-
-  .name-input, .price-input, .img-input, .description-input {
-    font-size: 15px;
-  }
-
-  .sub-button {
-    width: 10rem;
-    height: 3rem;
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 420px) {
-  .form {
-    box-sizing: content-box;
-    width: 90vw;
-  }
-
-  .title-container {
-    line-height: 3.5rem;
-    padding-bottom: 20px;
+  .form-title {
+    font-size: 3em;
   }
 
   .form-container {
-    width: 20rem;
+    width: 15em;
+    grid-template-rows: repeat(6, .2fr);
   }
-} */
+
+  
+}
+
+
+
+
+
+
+
 
 
 
