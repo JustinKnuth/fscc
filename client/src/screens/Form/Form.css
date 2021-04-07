@@ -18,16 +18,8 @@
 
 .form-container {
   width: 20em;
-  display: grid;
   grid-template-rows: repeat(6, .3fr);
   grid-template-columns: repeat(7, 1fr);
-  margin-top: 20px;
-  padding: 30px 20px;
-  border: 1px solid;
-  border-radius: 3px;
-  background-color: rgba(221, 220, 220, 0.1);
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  row-gap: 25px;
 }
 
 .name-input, .price-input, .img-input, .description-input {
