@@ -87,13 +87,17 @@ div.slider-control-bottomcenter{
 @media screen and (max-width: 1057px) {
   #statement {
     display: flex;
-    width: 96.7vw;
+    width: 100vw;
     top: 577px;
     position: unset;
-    
+    padding: unset;
   }
   h2#shop {
     visibility: hidden;
+  }
+
+  #statement h2 {
+    margin:0 30px;
   }
 
   .brand{

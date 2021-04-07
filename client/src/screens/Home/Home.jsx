@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import Carousel from "nuka-carousel";
+import Review from '../../components/Reviews/Review';
 import "./Home.css";
 
 
@@ -91,6 +92,7 @@ export default function Home(props) {
           src="https://peppercorn.net/image/cache/data/bialetti/Bialetti-logo-220x230.jpg"
         />
       </div>
+      <Review/>
     </div>
   );
 }
