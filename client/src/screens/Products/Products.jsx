@@ -29,12 +29,14 @@ const Products = (props) => {
       name={product.name}
       imgURL={product.imgURL}
       key={index}
+      className="product"
     />
   ));
 
   return (
     <Layout user={props.user}>
       <div className="products-screen-container">
+        <h3 className="products-title">Products</h3>
         <div className="products-container">{productsJSX}</div>
       </div>
     </Layout>

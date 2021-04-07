@@ -26,6 +26,35 @@ html {
   line-height: 60px;
   border-radius: 5px;
 }
+.brand-pic {
+  display: flex;
+  align-items: center;
+  width: 5%;
+  height: 5%;
+  margin-left: 15%;
+  margin-bottom: 20%;
+}
+
+#hario {
+  width: 200%;
+  margin-right: 70px;
+}
+#marzocco {
+  width: 200%;
+  margin-right: 70px;
+}
+#kalita {
+  width: 200%;
+  margin-right: 70px;
+}
+#fellow {
+  width: 200%;
+  margin-right: 70px;
+}
+#bialetti{
+  width: 200%;
+  margin-right: 70px;
+}
 
 h2#shop {
   display: flex;
@@ -77,8 +106,36 @@ h2#shop {
     background-color: #4e93b85a;
   }
 
+  
+
   #statement h2{
     margin-left: 8px;
     margin-right: 8px;
+  }
+  .brand-pic{
+    display: flex;
+    flex-flow: row;
+  }
+  #hario {
+    width: 400%;
+    margin-right: 0px;
+    margin-left: -50px;
+  }
+  #marzocco{
+    width: 400%;
+    margin-right: 0px;
+  }
+  #fellow{
+    width: 400%;
+    margin-left: -10px;
+    margin-right: 8px;
+  }
+  #bialetti {
+    width: 400%;
+    margin-left: -10px;
+  }
+  #kalita{
+    width: 400%;
+    margin-right: 0px;
   }
 }
