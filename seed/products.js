@@ -9,7 +9,7 @@ const main = async () => {
       "name": "Espresso machine",
       "price": "6000",
       "imgURL":
-        "https://home.lamarzoccousa.com/wp-content/uploads/2018/11/2973.png",
+        "https://i.imgur.com/fmZqNxT.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -17,7 +17,7 @@ const main = async () => {
       "name": "Moka pot",
       "price": "25",
       "imgURL":
-        "https://www.surlatable.com/dw/image/v2/BCJL_PRD/on/demandware.static/-/Sites-shop-slt-master-catalog/default/dw2ae7cbdc/images/large/464834_01K_0519_s.jpg",
+        "https://i.imgur.com/1sjBovI.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -25,7 +25,7 @@ const main = async () => {
       "name": "Kalita",
       "price": "33",
       "imgURL":
-        "https://kalita.space/img/files/item_main/2/6/2650/image.jpg",
+        "https://i.imgur.com/e7bJkFw.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -33,7 +33,7 @@ const main = async () => {
       "name": "EK-43",
       "price": "2500",
       "imgURL":
-        "https://rent.ekuep.com/wp-content/uploads/2018/04/mahlkonig-ek43-quarter.jpg",
+        "https://i.imgur.com/fDhL6Uh.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -41,7 +41,7 @@ const main = async () => {
       "name": "Fellow Kettle",
       "price": "150",
       "imgURL":
-        "https://2tkcpbu2i5t4e7gjsc4tvs17-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/SCC_FellowKettle_01-scaled.jpg",
+        "https://i.imgur.com/2Ak9iei.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
@@ -49,7 +49,7 @@ const main = async () => {
       "name": "Chemex",
       "price": "50",
       "imgURL":
-        "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1570569962804-5377da5be035%3Fixlib%3Drb-1.2.1%26q%3D80%26fm%3Djpg%26crop%3Dentropy%26cs%3Dtinysrgb%26w%3D1080%26fit%3Dmax",
+        "https://i.imgur.com/avf5qTd.png",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
