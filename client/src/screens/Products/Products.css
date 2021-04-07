@@ -23,6 +23,7 @@ h3.product-name {
   font-family: 'Vollkorn', serif;
   font-size: 2em;
   margin: 0 auto;
+  text-shadow: 2px 2px #CECECE;
 }
 
 .product:hover {
