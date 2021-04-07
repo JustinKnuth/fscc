@@ -14,7 +14,7 @@ export default function Review() {
       <Carousel>
         <div>
           <h3>John Stevens</h3>
-          <p>This is a good shit</p>
+          <p>This is a good st</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -23,7 +23,7 @@ export default function Review() {
         </div>
         <div>
           <h3>Marta Johnson</h3>
-          <p>These are some good shits</p>
+          <p>These are some good sts</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -32,7 +32,7 @@ export default function Review() {
         </div>
         <div>
           <h3>Steve Tyler</h3>
-          <p>This is some good shat</p>
+          <p>This is some good st</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -41,7 +41,7 @@ export default function Review() {
         </div>
         <div>
           <h3>Craig Zimmerman</h3>
-          <p>These are good shats</p>
+          <p>These are good shs</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -50,7 +50,7 @@ export default function Review() {
         </div>
         <div>
           <h3>Good Shirt</h3>
-          <p>This is a good shirt</p>
+          <p>This is a good sht</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -59,7 +59,7 @@ export default function Review() {
         </div>
         <div>
           <h3>Good Shirts</h3>
-          <p>these are good shirts</p>
+          <p>these are good shts</p>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
