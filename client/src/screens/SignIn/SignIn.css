@@ -20,12 +20,7 @@
 }
 
 .signin-username, .signin-password {
-  border: 1px solid grey;
-  border-radius: 3px;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  padding-left: 15px;
   grid-column: 1 / 4;
-  font-size: 1.5em;
 }
 
 .signin-username {

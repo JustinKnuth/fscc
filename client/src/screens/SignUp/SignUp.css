@@ -25,12 +25,7 @@
 .signup-email,
 .signup-password,
 .signup-password-confirmation {
-  border: solid 1px grey;
-  border-radius: 3px;
-  box-shadow: 2px 2px 10px 2px #cecece;
-  padding-left: 15px;
-  font-size: 1.5em;
-  grid-column: 1 / spa;
+  grid-column: 1 / 4;
 }
 
 .signup-username {
