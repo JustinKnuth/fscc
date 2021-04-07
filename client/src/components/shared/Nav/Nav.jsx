@@ -35,7 +35,7 @@ const Nav = ({ user }) => {
           </NavLink>
 
           <div className="links">
-            {user && <div className="user-welcome">Welcome {user.username}</div>}
+            {user && <div className="user-welcome">Welcome, {user.username}</div>}
 
             <AlwaysOptions />
 
@@ -46,7 +46,7 @@ const Nav = ({ user }) => {
       </nav>
 
 
-      <div className="nav-items" style={{ display: hamburger && visible ? `flex` : `none` }}>
+      <div className="nav-hamburger" style={{ display: hamburger && visible ? `flex` : `none` }}>
 
         <NavLink to="/">
           Home

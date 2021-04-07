@@ -13,10 +13,10 @@ nav {
 }
 
 .user-welcome{
-  color: black;
+  /* color: black; */
   margin-top: -30px;
   padding: 3px 0;
-  font-size: 25px;
+  font-size: 1.5em;
   padding-bottom:20px;
 }
 
@@ -41,7 +41,7 @@ nav {
 
 
 
-.nav-items{
+.nav-hamburger{
   background-color:rgba(208,180,159,.98);
   color: black;
   z-index: 1;
