@@ -12,24 +12,24 @@ nav {
   border-width: 3px;
 }
 
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.logo {
+  justify-content: center;
+  width: 150px;
+}
+
 .user-welcome{
   /* color: black; */
   margin-top: -30px;
   padding: 3px 0;
   font-size: 1.5em;
   padding-bottom:20px;
-}
-
-.nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  /* padding: 20px; */
-
-}
-.logo{
-  justify-content: center;
-  width: 150px;
 }
 
 .hamburger{
