@@ -1,7 +1,8 @@
 html {
-  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  /* height: 100%; */
 }
-
 
 .brand {
   display: flex;
@@ -11,12 +12,10 @@ html {
   height: 50%;
   margin-left: 10%;
   justify-content: space-around;
-  
 }
 
-
 #statement {
-  background-color: rgb(130, 130, 130, .5);
+  background-color: rgb(130, 130, 130, 0.5);
   height: fit-content;
   width: 600px;
   margin-top: 20px;
@@ -29,7 +28,7 @@ html {
 h2#shop {
   display: flex;
   justify-content: center;
-  background-color: rgb(130, 130, 130, .5);
+  background-color: rgb(130, 130, 130, 0.5);
   border: black 1px solid;
   width: 100px;
   height: 40px;
@@ -42,7 +41,6 @@ h2#shop {
   flex-direction: column;
   width: 100vw;
   height: 45vw;
-  
 }
 
 .slider-control-centerright,
@@ -50,5 +48,6 @@ h2#shop {
   visibility: hidden;
 }
 
-
-
+img.imgz {
+  margin: ;
+}
