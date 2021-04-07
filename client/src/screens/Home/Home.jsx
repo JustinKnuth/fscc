@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import Carousel from 'nuka-carousel';
 import './Home.css'
+import Review from "../../components/Reviews/Review"
 
 export default function Home(props) {
   const [autoplay, setAutoplay] = useState(false)
@@ -17,6 +18,7 @@ export default function Home(props) {
   }, [])
   
   return (
+    
     <div className="bg-image">
       <Layout user={props.user}>
           <div  className="carousel">
@@ -41,7 +43,14 @@ export default function Home(props) {
         <h2>All coffee begins with a bloom: an elegant, fragrant white flower. Exceptional coffee, freshly roasted and ground, blooms again when infused with hot water - equally fragrant and even more complex. We care deeply about everything in between these two blooms, from the producers to precision brewing. Our passion for this craft ensures the end result - what’s in your cup - is as beautiful as its beginning.</h2>
           </div>
         </div>
+        
       </Layout>
+      
     </div>
+    
+      
+
+
+    
   )
 }
