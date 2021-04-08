@@ -38,7 +38,9 @@ const Nav = ({ user }) => {
     <nav>
       {isMobile ? (
         <div className="mobile-nav">
-          <img className="mobile-logo" src="/fscclogolight.png" alt="logo" />
+          <Link to="/">
+            <img className="mobile-logo" src="/fscclogolight.png" alt="logo" />
+          </Link>
           {/* I got the hamburger icon code snippet here: https://css-tricks.com/snippets/svg/svg-hamburger-menu/ */}
           <svg
             viewBox="0 0 200 160"
