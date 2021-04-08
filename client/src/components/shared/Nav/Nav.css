@@ -19,13 +19,18 @@ nav {
   grid-template-columns: 1fr 150px 1fr;
 }
 
+a.nav-header-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
 .nav-header {
   color:black;
   font-size: 40px;
   font-family: 'Vollkorn', serif;
   text-decoration: none;
   grid-column: 1 / 2;
-  margin-top: 50px;
 }
 
 a {
@@ -33,7 +38,7 @@ a {
   color: black;
 }
 
-.logo {
+.desktop-logo {
   height: 150px;
   grid-column: 2 / 3;
 }
@@ -57,16 +62,24 @@ a {
 
 /* TABLET NAV STYLES ===================================================== */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .nav-header {
-    font-size: 26px;
-    margin-top: 60px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-header {
+    font-size: 24px;
+  }
+
+  .desktop-links {
+    font-size: 1em;
   }
 }
 
 /* MOBILE NAV STYLES ===================================================== */
 
-@media screen and (max-width: 640px) {
   .mobile-nav {
   display: flex;
   justify-content: space-between;
@@ -74,7 +87,7 @@ a {
   width: 100%;
   }
 
-  .logo {
+  .mobile-logo {
     height: 100px;
   }
 
@@ -107,12 +120,11 @@ a {
   .hamburger-links>a:hover {
     text-decoration: underline;
   }
-}
 
 /* SMALL MOBILE NAV STYLES =============================================== */
 
 @media screen and (max-width: 350px) {
-  .logo {
+  .mobile-logo {
     height: 75px;
   }
 
