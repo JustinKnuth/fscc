@@ -22,7 +22,6 @@ nav {
 a.nav-header-container {
   display: flex;
   align-items: center;
-  margin-left: 10%;
 }
 
 .nav-header {
@@ -31,6 +30,7 @@ a.nav-header-container {
   font-family: 'Vollkorn', serif;
   text-decoration: none;
   grid-column: 1 / 2;
+  margin: 0 auto;
 }
 
 a {
@@ -62,15 +62,15 @@ a {
 
 /* TABLET NAV STYLES ===================================================== */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
   .nav-header {
     font-size: 32px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .nav-header {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .desktop-links {
