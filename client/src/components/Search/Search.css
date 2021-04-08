@@ -1,0 +1,73 @@
+/* citting https://wpdatatables.com/html-search-box/ */
+
+.search-container {
+	display: table;
+	width: 70px;
+}
+
+.inner-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.inner-contaiiner {
+  width: 100vw;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  margin: 0px 8px 5px 0px;
+  padding: 7px 9px 0px 9px;
+  border: 5px solid;
+  border-radius: 25px;
+  transition: all 200ms ease;
+  cursor: text;
+}
+
+.search::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  right: -10px;
+  top: 21px;
+  border: 3px solid;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  transition: all 200ms ease;
+}
+
+.search:active,
+.search:hover {
+  width: 200px;
+  margin-right: 0px;
+}
+
+  .search::after {
+    margin: 1px 1px;
+    height: 15px;
+    background-color: black;
+  }
+
+
+.search-input {
+  position: relative;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  background: transparent;
+  outline-width: 0px;
+  box-shadow: none;
+  bottom: 7px;
+}
+
+.search::after:hover {
+  visibility: hidden;
+}
