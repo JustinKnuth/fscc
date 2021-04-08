@@ -31,7 +31,7 @@ const Cart = (props) => {
   const cartItemsJSX = cartItems.map((cartItem, index) => (
     <GetCarts
       _id={cartItem._id}
-      image={cartItem.imgURL}
+      // image={cartItem.imgURL}
       name={cartItem.name}
       price={cartItem.price}
       key={index}
