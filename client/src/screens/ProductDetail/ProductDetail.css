@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
 /* Basic desktop layout================================================= */
 
 .product-detail {
   display: flex;
   padding: 25px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .product-detail-image {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .product-detail-text {
@@ -17,11 +18,15 @@
   flex-direction: column;
   line-height: 1.6;
   text-align: left;
-  margin: 0px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
 .product-detail-name {
   font-size: 48px;
+  font-family: 'Vollkorn', serif;
+  font-size: 4.5em;
+  text-shadow: 2px 2px #CECECE;
 }
 
 .product-detail-price {
@@ -34,28 +39,20 @@
 
 .button-container {
   display: flex;
-  justify-content: space-evenly;
+  /* width: 50%; */
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
 .edit-button, .delete-button {
-  font-size: 22px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 600;
-  text-align: center;
   height: 40px;
   width: 90px;
-  align-self: center;
   margin-top: 40px;
-  background-color: #4E93B8;
-  color: white;
-  border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  cursor: pointer;
 }
 
 .edit-button {
   padding-left: 25px;
+  margin-right: 30px;
 }
 
 .edit-link {
@@ -69,11 +66,13 @@
 @media (max-width: 1000px) {
   .product-detail {
     padding: 0px;
+    margin: 20px auto;
   }
   
   .product-detail-image {
     max-width: 300px;
     max-height: 300px;
+    margin: 40px auto;
   }
   
   .product-detail-text {

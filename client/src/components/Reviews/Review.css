@@ -1,0 +1,13 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.review-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 45vw;
+}
+
+.checked{
+  color: hotpink;
+}

@@ -1,8 +1,8 @@
-import { NavLink } from "react"
+import { NavLink } from "react-router-dom"
 
 
 
-export const authenticatedOptions = () => {
+export default function AuthenticatedOptions () {
   return (
      
     <>
@@ -19,12 +19,4 @@ export const authenticatedOptions = () => {
 
  
 
-
-//  export const alwaysOptions = (
-//   <>
-//     <NavLink className="link" to="/products">
-//       Products
-//     </NavLink>
-//   </>
-// );
 

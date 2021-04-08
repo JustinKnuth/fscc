@@ -7,142 +7,128 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
-  border-bottom-style:groove;
+  border-bottom-style: groove;
   border-bottom-color: black;
-  border-width: 5px;
+  border-width: 3px;
 }
 
-.user-welcome{
-  color: black;
-  margin-top: -30px;
-  padding: 3px 0;
-  font-size: 25px;
-  padding-bottom:20px;
+/* DESKTOP NAV STYLES ================================================== */
+
+.desktop-nav {
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
 }
 
-.nav {
+a.nav-header-container {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  /* padding: 20px; */
-
+  align-items: center;
+  margin-left: 10%;
 }
-.logo{
-  justify-content: center;
-  width: 150px;
-}
-
-.hamburger{
-  width:20px;
-  float: right;
-  visibility: hidden;
-  margin-right: 20px;
-}
-
-
-
-.nav-items{
-  background-color:rgba(208,180,159,.98);
-  color: black;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  margin-top: -15px;
-  border-style: groove;
-  border-color:black;
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  justify-content: space-evenly;
-  font-weight:1000;
-  font-size: 20px;
-}
-
-
-
 
 .nav-header {
   color:black;
   font-size: 40px;
-  margin-top: -100px;
-  
-  margin-left: 20px;
   font-family: 'Vollkorn', serif;
+  text-decoration: none;
+  grid-column: 1 / 2;
 }
 
 a {
   text-decoration: none;
   color: black;
-  margin-right: 30px;
 }
 
-.links {
-  font-size: 25px;
-  margin-top: -87px;  
-  
-  
+.desktop-logo {
+  height: 150px;
+  grid-column: 2 / 3;
 }
 
-@media screen and (max-width: 995px){
-  .links{
-    font-size: 20px;
-    margin-top: -80px;
-  }
-  .nav-header{
-    font-size: 30px;
-    margin-top:-89px;
-  }
-  .user-welcome{
-    margin-top: -35px;
-  }
-    
+.desktop-console {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 3 / 4;
 }
 
-@media screen and (max-width: 830px){
-  .links{
-    font-size: 17px;
-    margin-top: -75px;
-    
-  }
-  .nav-header{
-    font-size: 26px;
-    margin-top: -88px;
-  }
-  .user-welcome{
-    margin-top: -40px;
-  }
-
-
+.user-welcome {
+  font-size: 1.5em;
 }
 
-@media screen and (max-width: 700px){
-  .nav-header{
-    color:#f1c587;
-   visibility: hidden;
-  }
-  .logo{
-    float: left;
-  }
-  .links{
-    font-size:17px;
+.desktop-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+}
+
+/* TABLET NAV STYLES ===================================================== */
+
+@media screen and (max-width: 960px) {
+  .nav-header {
+    font-size: 32px;
   }
 }
 
-@media screen and (max-width: 582px){
-  .links{
-    visibility: hidden;
-  
+@media screen and (max-width: 800px) {
+  .nav-header {
+    font-size: 24px;
   }
-  .hamburger{
-    visibility: visible;
-    width:60px;
-    margin-top:35px;
-    
-    }
-    .links>{
-      font-size:10px;
-    }
 
+  .desktop-links {
+    font-size: 1em;
+  }
+}
 
+/* MOBILE NAV STYLES ===================================================== */
 
+  .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  }
+
+  .mobile-logo {
+    height: 100px;
+  }
+
+  .hamburger {
+    padding-right: 5%;
+    cursor: pointer;
+  }
+
+  .hamburger-links {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 300px;
+    background-color: rgba(208, 180, 159, .98);
+    color: black;
+    border-color: black;
+    border-style: groove;
+    font-weight: 1000;
+    font-size: 2em;
+  }
+
+  .hamburger-links>a {
+    cursor: pointer;
+  }
+
+  .hamburger-links>a:hover {
+    text-decoration: underline;
+  }
+
+/* SMALL MOBILE NAV STYLES =============================================== */
+
+@media screen and (max-width: 350px) {
+  .mobile-logo {
+    height: 75px;
+  }
+
+  .hamburger-links {
+    margin-top: 280px;
+  }
 }
