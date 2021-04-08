@@ -1,16 +1,15 @@
 html {
   box-sizing: border-box;
   padding: 0;
-  /* height: 100%; */
 }
 
 .brand {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 45%;
+  width: 100%;
   height: 50%;
-  margin-left: 10%;
+  margin-left: 110px;
   justify-content: space-around;
 }
 
@@ -23,37 +22,39 @@ html {
   position: absolute;
   top: 280px;
   padding-left: 10px;
-  line-height: 60px;
+  line-height: 30px;
   border-radius: 5px;
 }
 .brand-pic {
   display: flex;
   align-items: center;
-  width: 5%;
+  
   height: 5%;
-  margin-left: 15%;
+  
+  justify-content: space-evenly;
   margin-bottom: 20%;
+  
 }
 
 #hario {
-  width: 200%;
-  margin-right: 70px;
+  width: 17%;
+  
 }
 #marzocco {
-  width: 200%;
-  margin-right: 70px;
+  width: 17%;
+  
 }
 #kalita {
-  width: 200%;
-  margin-right: 70px;
+  width:17%;
+  
 }
 #fellow {
-  width: 200%;
-  margin-right: 70px;
+  width:17%;
+  
 }
 #bialetti{
-  width: 200%;
-  margin-right: 70px;
+  width:17%;
+  
 }
 
 h2#shop {
@@ -79,18 +80,24 @@ h2#shop {
 .slider-control-centerleft {
   visibility: hidden;
 }
+div.slider-control-bottomcenter{
+  visibility: hidden;
+}
 
-
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1057px) {
   #statement {
     display: flex;
-    width: 97vw;
+    width: 96.7vw;
     top: 577px;
-    margin-left: -99px;
+    position: unset;
     
   }
   h2#shop {
     visibility: hidden;
+  }
+
+  .brand{
+    margin: unset;
   }
 }
 
@@ -98,7 +105,6 @@ h2#shop {
   #statement {
     position: unset;
     width: 100vw;
-    margin-left: 72%;
     height: fit-content;
     align-self: center;
     line-height: 40px;
@@ -106,6 +112,7 @@ h2#shop {
     background-color: #4e93b85a;
   }
 
+  
   
 
   #statement h2{
@@ -116,26 +123,5 @@ h2#shop {
     display: flex;
     flex-flow: row;
   }
-  #hario {
-    width: 400%;
-    margin-right: 0px;
-    margin-left: -50px;
-  }
-  #marzocco{
-    width: 400%;
-    margin-right: 0px;
-  }
-  #fellow{
-    width: 400%;
-    margin-left: -10px;
-    margin-right: 8px;
-  }
-  #bialetti {
-    width: 400%;
-    margin-left: -10px;
-  }
-  #kalita{
-    width: 400%;
-    margin-right: 0px;
-  }
+  
 }
