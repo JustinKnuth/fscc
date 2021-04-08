@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css'
 import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
@@ -12,7 +12,6 @@ import Form from "./screens/Form/Form"
 
 function App() {
   const [user, setUser] = useState(null)
-  const [toggleFetch, setToggleFetch] = useState(false)
   
   useEffect(() => {
     const fetchUser = async () => {

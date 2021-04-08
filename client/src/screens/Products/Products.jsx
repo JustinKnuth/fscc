@@ -12,7 +12,6 @@ const Products = (props) => {
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getProducts();
-      console.log(products);
       setAllProducts(products);
       setQueriedProducts(products);
     };
@@ -27,10 +26,11 @@ const Products = (props) => {
   };
 
   if (!allProducts) {
-    return;
+    return (
     <>
       <h3>Hello</h3>
-    </>;
+    </>
+    )
   }
 
   const productsJSX = queriedProducts.map((product, index) => (
