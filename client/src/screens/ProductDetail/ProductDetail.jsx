@@ -32,9 +32,10 @@ const ProductDetail = (props) => {
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
-
+  console.log(props.user);
   return (
     <Layout user={props.user}>
+      
       <div className="product-detail">
         <img
           className="product-detail-image"

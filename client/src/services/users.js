@@ -49,3 +49,12 @@ export const verifyUser = async () => {
     }
     return false
 }
+
+export const addToCart = async (id, productId) => {
+  try {
+    const resp = await api.put(`/users/${id}/add-to-cart/${productId}`)
+    return resp.data
+  } catch (error) {
+    throw error
+  }
+}
