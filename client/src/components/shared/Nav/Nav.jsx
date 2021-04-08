@@ -1,5 +1,5 @@
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import AuthOptions from "./NavAuthenticationOptions/AuthOptions";
 import UnAuthOptions from "./NavAuthenticationOptions/UnAuthOptions";
@@ -57,8 +57,12 @@ const Nav = ({ user }) => {
             className="hamburger-links"
             style={{ display: hamburger && visible ? "flex" : "none" }}
           >
-            <Link to="/">Home</Link>
+            <Link to="/">home</Link>
+
             <AlwaysOptions />
+            {user && (
+              <NavLink to="/users/:id/add-to-cart/:productId">cart</NavLink>
+            )}
             {user ? <AuthOptions /> : <UnAuthOptions />}
           </div>
         </div>
@@ -70,11 +74,14 @@ const Nav = ({ user }) => {
           <img className="desktop-logo" src="/fscclogolight.png" alt="logo" />
           <div className="desktop-console">
             {user && (
-              <div className="user-welcome">Welcome, {user.username}!</div>
+              <div className="user-welcome">welcome, {user.username}!</div>
             )}
             <div className="desktop-links">
               <AlwaysOptions />
-              {user ? <AuthOptions /> : <UnAuthOptions />}
+                {user ? <AuthOptions /> : <UnAuthOptions />}
+                {user && (<NavLink to="/users/:id/add-to-cart/:productId">
+        <img src="/shopping-cart.png" alt="cart" width="25px"/>
+      </NavLink>)}
             </div>
           </div>
         </div>
