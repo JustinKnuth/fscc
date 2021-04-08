@@ -14,7 +14,7 @@ export default function Review() {
       <Carousel>
         <div>
           <h4>John Stevens</h4>
-          <p>I really love Full Stack Coffee. The customer service is amazing. It feels personal. Keeo up the good work!!!!</p>
+          <p>I really love Full Stack Coffee. The customer service is amazing. It feels personal. Keep up the good work!!!!</p>
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
