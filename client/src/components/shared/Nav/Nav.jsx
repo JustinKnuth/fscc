@@ -33,7 +33,7 @@ const Nav = ({ user }) => {
 
   // Use isMobile to determine which layout to render
   const isMobile = windowDimension <= 640;
-  console.log(user.id);
+  
   return (
     <nav>
       {isMobile ? (
