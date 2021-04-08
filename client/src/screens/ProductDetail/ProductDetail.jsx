@@ -31,14 +31,13 @@ const ProductDetail = (props) => {
   const toCart = async (e) => {
     e.preventDefault();
     await addToCart(props.user.id, product._id)
-    
-   }
+    }
 
   // If the product takes a long time to load, display this
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
-  console.log(props.user);
+
   return (
     <Layout user={props.user}>
       
@@ -58,9 +57,7 @@ const ProductDetail = (props) => {
           {props.user && (
             <div className="button-container">
               <button className="add-button" onClick={toCart}>
-                
                   add to cart
-               
               </button>
               <button className="edit-button">
                 <Link
