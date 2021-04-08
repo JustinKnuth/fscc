@@ -22,7 +22,10 @@ function App() {
     fetchUser()
   }, [])
 
-  const clearUser = () => setUser(null)
+  const clearUser = () => {
+    localStorage.removeItem('token')
+    setUser(null)
+  }
 
   return (
     <div className="App">

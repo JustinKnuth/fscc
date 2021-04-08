@@ -102,12 +102,21 @@ const addToCart = async (req, res) => {
   }
 }
 
-const changePassword = async (req, res) => {};
+const getCart = async (req, res) => {
+  try {
+    const { id } = req.params
+    const user = await User.findById(id)
+    res.json(user.cart)
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
+
 
 module.exports = {
   signUp,
   signIn,
   verify,
-  changePassword,
-  addToCart
+  addToCart,
+  getCart
 };
