@@ -8,7 +8,8 @@ import SignUp from "./screens/SignUp/SignUp";
 import SignOut from "./screens/SignOut/SignOut";
 import Home from './screens/Home/Home';
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
-import Form from "./screens/Form/Form"
+import Form from "./screens/Form/Form";
+import Cart from "./screens/Cart/Cart"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -50,6 +51,9 @@ function App() {
         </Route>
         <Route exact path="/products/:id">
           <ProductDetail user={user}/>
+        </Route>
+        <Route exact path="/user/:id/cart">
+          <Cart user={user}/>
         </Route>
       </Switch>
     </div>
