@@ -33,7 +33,7 @@ const Nav = ({ user }) => {
 
   // Use isMobile to determine which layout to render
   const isMobile = windowDimension <= 640;
-
+  console.log(user.id);
   return (
     <nav>
       {isMobile ? (
@@ -61,7 +61,7 @@ const Nav = ({ user }) => {
 
             <AlwaysOptions />
             {user && (
-              <NavLink to="/users/:id/add-to-cart/:productId">cart</NavLink>
+              <NavLink to={`/users/${user.id}/cart`}>cart</NavLink>
             )}
             {user ? <AuthOptions /> : <UnAuthOptions />}
           </div>
@@ -79,7 +79,7 @@ const Nav = ({ user }) => {
             <div className="desktop-links">
               <AlwaysOptions />
                 {user ? <AuthOptions /> : <UnAuthOptions />}
-                {user && (<NavLink to="/users/:id/add-to-cart/:productId">
+                {user && (<NavLink to={`/users/${user.id}/cart`}>
         <img src="/shopping-cart.png" alt="cart" width="25px"/>
       </NavLink>)}
             </div>
