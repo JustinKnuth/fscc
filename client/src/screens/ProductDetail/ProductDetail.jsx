@@ -44,10 +44,17 @@ const ProductDetail = (props) => {
         <div className="product-detail-text">
           <div className="product-detail-name">{product.name}</div>
           <div className="product-detail-price">{`$${product.price}`}</div>
-          <div className="product-detail-description">{product.description}</div>
+          <div className="product-detail-description">
+            {product.description}
+          </div>
           {/* If user props were passed into this screen, display the edit and delete buttons */}
           {props.user && (
             <div className="button-container">
+              <button className="add-button">
+                <Link className="add-link" to={`/user/${props.user._id}/cart`}>
+                  add to cart
+                </Link>
+              </button>
               <button className="edit-button">
                 <Link
                   className="edit-link"
@@ -67,4 +74,4 @@ const ProductDetail = (props) => {
   );
 };
 
-export default ProductDetail; 
+export default ProductDetail;
