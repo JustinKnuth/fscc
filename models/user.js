@@ -7,7 +7,7 @@ const User = new Schema(
     username: { type: String, required: true },
     email: { type: String, required: true },
     password_digest: { type: String, required: true },
-    cart: [{ type: String }]
+    cart: []
   },
   { timestamps: true }
 )

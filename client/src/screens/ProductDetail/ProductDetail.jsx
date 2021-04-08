@@ -3,6 +3,7 @@ import "./ProductDetail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useHistory, useParams, Link } from "react-router-dom";
+import { addToCart } from "../../services/users"
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -27,6 +28,11 @@ const ProductDetail = (props) => {
     await deleteProduct(product._id);
     history.push("/products");
   };
+  const toCart = async (e) => {
+    e.preventDefault();
+    await addToCart(props.user.id, product._id)
+    
+   }
 
   // If the product takes a long time to load, display this
   if (!isLoaded) {
@@ -51,10 +57,10 @@ const ProductDetail = (props) => {
           {/* If user props were passed into this screen, display the edit and delete buttons */}
           {props.user && (
             <div className="button-container">
-              <button className="add-button">
-                <Link className="add-link" to={`/user/${props.user._id}/cart`}>
+              <button className="add-button" onClick={toCart}>
+                
                   add to cart
-                </Link>
+               
               </button>
               <button className="edit-button">
                 <Link
