@@ -31,6 +31,7 @@ const ProductDetail = (props) => {
   const toCart = async (e) => {
     e.preventDefault();
     await addToCart(props.user.id, product._id);
+    history.push(`/users/${props.user.id}/cart`)
   };
 
   // If the product takes a long time to load, display this
@@ -48,7 +49,7 @@ const ProductDetail = (props) => {
         />
         <div className="product-detail-text">
           <div className="product-detail-name">{product.name}</div>
-          <div className="product-detail-price">{`$${product.price}`}</div>
+          <div className="product-detail-price">{`${product.price}`}</div>
           <div className="product-detail-description">
             {product.description}
           </div>
