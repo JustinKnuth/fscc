@@ -12,7 +12,7 @@ export default function AlwaysOptions() {
   return (
     <>
       <NavLink className="link" to="/products">
-        Products
+        products
     </NavLink>
     </>
 
