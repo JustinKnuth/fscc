@@ -57,7 +57,7 @@ export default function Home(props) {
           </Link>
           <div id="statement">
             <h2>
-              All coffee begins with a bloom: an elegant, fragrant white flower.
+              All coffee begins with a bloom: an elegant, fragrant, white flower.
               Exceptional coffee, freshly roasted and ground, blooms again when
               infused with hot water - equally fragrant and even more complex.
               We care deeply about everything in between these two blooms, from
