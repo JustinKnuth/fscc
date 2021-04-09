@@ -13,6 +13,12 @@ html {
   justify-content: space-around;
 }
 
+.coffee-news-container{
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: hotpink;
+}
+
 #statement {
   font-family: 'Vollkorn', serif;
   color: #f1c587;
@@ -84,11 +90,17 @@ h2#shop {
   height: 45vw;
   
 }
+.review-container h2 {
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: hotpink;
+}
 
 .slider-control-centerright,
 .slider-control-centerleft {
   font-size: 8px;
   background:none;
+  margin: 0 10px;
   
 }
 div.slider-control-bottomcenter{
