@@ -1,12 +1,11 @@
 import "./GetCarts.css";
-import { Link } from "react-router-dom";
 
 const GetCarts = (props) => {
-  console.log(props);
   
   return (
     <>
       
+
    
       <tr>
         <td>
@@ -18,6 +17,8 @@ const GetCarts = (props) => {
         </td>
         <td>
         <Link to={`/products/${props._id}`}>
+
+
       <h2 className="cart-item-name">{props.name}</h2>
     </Link>
         </td>
