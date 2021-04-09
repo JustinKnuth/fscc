@@ -20,15 +20,19 @@ html {
 }
 
 #statement {
-  background-color: rgb(130, 130, 130, 0.5);
+  font-family: 'Vollkorn', serif;
+  color: #f1c587;
+  text-shadow: 1px 1px black;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.6);
   height: fit-content;
   width: 45%;
   margin-top: 20px;
-  border: black 1px solid;
+  /* border: black 1px solid; */
   position: absolute;
   top: 280px;
   padding-left: 10px;
-  line-height: 30px;
+  line-height: 35px;
   border-radius: 5px;
 }
 .brand-pic {
@@ -65,11 +69,15 @@ html {
 
 h2#shop {
   display: flex;
+  font-family:'Vollkorn', serif;
+  color: #f1c587;
+  text-shadow: 2px 2px black;
   justify-content: center;
-  background-color: rgb(130, 130, 130, 0.5);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
   border: black 1px solid;
-  width: 100px;
-  height: 40px;
+  width: 5em;
+  height: 2em;
   position: absolute;
   top: 200px;
   border-radius: 4px;
