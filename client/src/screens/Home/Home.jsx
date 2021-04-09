@@ -27,7 +27,7 @@ export default function Home(props) {
       let res = await axios.get(url)
       console.log(res.data.articles)
       setNews(res.data.articles)
-      
+
     }
     getNews()
   }, [])
@@ -36,10 +36,10 @@ export default function Home(props) {
 
 
   return (
-    <div>
-      
-     
-    
+
+
+
+
 
 
 
@@ -123,14 +123,18 @@ export default function Home(props) {
           src="https://peppercorn.net/image/cache/data/bialetti/Bialetti-logo-220x230.jpg"
           alt="bialetti"
         />
-        </div>
-        {news.map((item, index) => (
-      <News key={index}
-        article={item}
-        index={index} />
-    ))}
-      <Review/>
       </div>
-      </div>
+
+      <Review />
+
+      <h2 className="coffee-news-container">coffee news</h2>
+
+      {news.map((item, index) => (
+        <News key={index}
+          article={item}
+          index={index} />
+      ))}
+    </div>
+
   );
 }
