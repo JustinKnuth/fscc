@@ -2,7 +2,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
-const Product = require("../models/product");
 // db sets up promise to figure out whether we're working locally or on the mongoDB URI
 const db = require("../db/connection");
 
@@ -31,7 +30,6 @@ const signUp = async (req, res) => {
 
     // User info stored in payload
     const payload = {
-      id: user.id,
       username: user.username,
       email: user.email,
     };
@@ -56,7 +54,6 @@ const signIn = async (req, res) => {
     if (await bcrypt.compare(password, user.password_digest)) {
       // Set up the username and password from database in payload
       const payload = {
-        id: user.id,
         username: user.username,
         email: user.email,
       };
@@ -89,34 +86,11 @@ const verify = async (req, res) => {
   }
 };
 
-const addToCart = async (req, res) => {
-  try {
-    const { id, productId } = req.params
-    const product = await Product.findById(productId)
-    const user = await User.findById(id)
-    user.cart.push(product)
-    await user.save()
-    res.json({status: "successfully added to shopping cart!"})
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-}
-
-const getCart = async (req, res) => {
-  try {
-    const { id } = req.params
-    const user = await User.findById(id)
-    res.json(user.cart)
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-}
-
+const changePassword = async (req, res) => {};
 
 module.exports = {
   signUp,
   signIn,
   verify,
-  addToCart,
-  getCart
+  changePassword,
 };

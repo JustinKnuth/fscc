@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css'
 import { verifyUser } from './services/users';
 import Products from "./screens/Products/Products"
@@ -8,11 +8,11 @@ import SignUp from "./screens/SignUp/SignUp";
 import SignOut from "./screens/SignOut/SignOut";
 import Home from './screens/Home/Home';
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
-import Form from "./screens/Form/Form";
-import Cart from "./screens/Cart/Cart"
+import Form from "./screens/Form/Form"
 
 function App() {
   const [user, setUser] = useState(null)
+  const [toggleFetch, setToggleFetch] = useState(false)
   
   useEffect(() => {
     const fetchUser = async () => {
@@ -22,10 +22,7 @@ function App() {
     fetchUser()
   }, [])
 
-  const clearUser = () => {
-    localStorage.removeItem('token')
-    setUser(null)
-  }
+  const clearUser = () => setUser(null)
 
   return (
     <div className="App">
@@ -53,9 +50,6 @@ function App() {
         </Route>
         <Route exact path="/products/:id">
           <ProductDetail user={user}/>
-        </Route>
-        <Route exact path="/users/:id/cart">
-          <Cart user={user}/>
         </Route>
       </Switch>
     </div>

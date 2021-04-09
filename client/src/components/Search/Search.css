@@ -68,6 +68,6 @@
   bottom: 7px;
 }
 
-.search:hover .search::after {
-  display: none;
+.search::after:hover {
+  visibility: hidden;
 }

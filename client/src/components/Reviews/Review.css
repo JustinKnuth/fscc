@@ -4,57 +4,10 @@
 .review-container{
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
- 
+  width: 100vw;
+  height: 45vw;
 }
 
 .checked{
   color: hotpink;
-  font-size: 20px;
-  padding-bottom: 40px;
-}
-
-.review-container h2 {
-  font-size: 35px;
-}
-
-.review-container h3{
-  font-size: 30px;
-  
-}
-
-.review-container h4 {
-  font-size: 30px;
-  font-weight: normal;
-}
-
-.review-container p {
-  margin: 0 auto;
-  width:60%;
-  text-align: center;
-}
-
-@media screen and (max-width: 400px){
-  
-  
-  .review-container h2 {
-    font-size: 25px;
-  }
-  
-  .review-container h3{
-    font-size: 25px;
-    
-  }
-  
-  .review-container h4 {
-    font-size: 25px;
-    font-weight: normal;
-  }
-  
-  .review-container p {
-    margin: 0 auto;
-    width:60%;
-    text-align: center;
-  }
 }

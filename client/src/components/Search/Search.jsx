@@ -6,7 +6,14 @@ const Search = (props) => {
     <>
       <div className="search-container">
         <div className="inner-container">
-          <label className="search" htmlFor="search-input">
+          {/* <img
+          className="search-icon"
+          src="https://i.imgur.com/8dfJFh0.png"
+          alt="search"
+          width="100px"
+        /> */}
+          <label className="search" for="search-input">
+            {/* <form className="search-form" onSubmit={(e) => props.onSubmit(e)}> */}
             <input
               onSubmit={(e) => props.onSubmit(e)}
               className="search-input"
@@ -17,6 +24,7 @@ const Search = (props) => {
               type="text"
               autoFocus
             />
+            {/* </form> */}
           </label>
         </div>
       </div>

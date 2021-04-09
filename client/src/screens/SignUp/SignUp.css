@@ -62,7 +62,6 @@
 
   .signup-container {
     width: 15em;
-    grid-template-columns: 1fr 6em 1fr;
     grid-template-rows: repeat(6, 0.2fr);
   }
 }

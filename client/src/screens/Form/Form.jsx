@@ -19,15 +19,14 @@ function Form(props) {
   });
 
   let { id } = useParams();
+  // console.log(id)
 
   useEffect(() => {
-    if (id) {
-      const fetchProduct = async () => {
-        const productDetail = await getProduct(id);
-        setProduct(productDetail);
-      };
-      fetchProduct();
-    }
+    const fetchProduct = async () => {
+      const productDetail = await getProduct(id);
+      setProduct(productDetail);
+    };
+    fetchProduct();
   }, [id]);
 
   const handleChange = (e) => {
@@ -62,7 +61,9 @@ function Form(props) {
     <>
       <Layout user={props.user}>
         <div className="form">
+          {/* <div className="title-container"> */}
             {id ? <h3 className="form-title">edit product</h3> : <h3 className="form-title">create product</h3>}
+          {/* </div> */}
           <form onSubmit={handleSubmit} className="form-container">
             <input
               type="text"

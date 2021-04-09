@@ -6,11 +6,11 @@ export default function UnauthenticatedOptions() {
   return (
     <>
       <NavLink className="link" to="/sign-up">
-        sign up
+        Sign Up
         </NavLink>
 
       <NavLink className="link" to="/sign-in">
-        sign in
+        Sign In
     </NavLink>
     </>
 

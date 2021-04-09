@@ -1,5 +1,5 @@
 import "./Nav.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import AuthOptions from "./NavAuthenticationOptions/AuthOptions";
 import UnAuthOptions from "./NavAuthenticationOptions/UnAuthOptions";
@@ -33,14 +33,12 @@ const Nav = ({ user }) => {
 
   // Use isMobile to determine which layout to render
   const isMobile = windowDimension <= 640;
-  
+
   return (
     <nav>
       {isMobile ? (
         <div className="mobile-nav">
-          <Link to="/">
-            <img className="mobile-logo" src="/fscclogolight.png" alt="logo" />
-          </Link>
+          <img className="mobile-logo" src="/fscclogolight.png" alt="logo" />
           {/* I got the hamburger icon code snippet here: https://css-tricks.com/snippets/svg/svg-hamburger-menu/ */}
           <svg
             viewBox="0 0 200 160"
@@ -57,12 +55,8 @@ const Nav = ({ user }) => {
             className="hamburger-links"
             style={{ display: hamburger && visible ? "flex" : "none" }}
           >
-            <Link to="/">home</Link>
-
+            <Link to="/">Home</Link>
             <AlwaysOptions />
-            {user && (
-              <NavLink to={`/users/${user.id}/cart`}>cart</NavLink>
-            )}
             {user ? <AuthOptions /> : <UnAuthOptions />}
           </div>
         </div>
@@ -74,14 +68,11 @@ const Nav = ({ user }) => {
           <img className="desktop-logo" src="/fscclogolight.png" alt="logo" />
           <div className="desktop-console">
             {user && (
-              <div className="user-welcome">welcome, {user.username}!</div>
+              <div className="user-welcome">Welcome, {user.username}!</div>
             )}
             <div className="desktop-links">
               <AlwaysOptions />
-                {user ? <AuthOptions /> : <UnAuthOptions />}
-                {user && (<NavLink to={`/users/${user.id}/cart`}>
-        <img src="/shopping-cart.png" alt="cart" width="25px"/>
-      </NavLink>)}
+              {user ? <AuthOptions /> : <UnAuthOptions />}
             </div>
           </div>
         </div>
