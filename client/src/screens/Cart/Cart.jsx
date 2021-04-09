@@ -37,7 +37,7 @@ const Cart = (props) => {
       className="cartItem" />
   ))
 
-console.log(cartItems)
+
   return (
     <Layout user={props.user}>
       <h3>Cart</h3>

@@ -1,7 +1,7 @@
 import "./GetCarts.css";
 
 const GetCarts = (props) => {
-  console.log(props);
+  
   return (
     <>
       
