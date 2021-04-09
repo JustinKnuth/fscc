@@ -3,7 +3,7 @@ import "./ProductDetail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useHistory, useParams, Link } from "react-router-dom";
-import { addToCart } from "../../services/users"
+import { addToCart } from "../../services/users";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -30,8 +30,8 @@ const ProductDetail = (props) => {
   };
   const toCart = async (e) => {
     e.preventDefault();
-    await addToCart(props.user.id, product._id)
-    }
+    await addToCart(props.user.id, product._id);
+  };
 
   // If the product takes a long time to load, display this
   if (!isLoaded) {
@@ -40,7 +40,6 @@ const ProductDetail = (props) => {
 
   return (
     <Layout user={props.user}>
-      
       <div className="product-detail">
         <img
           className="product-detail-image"
@@ -57,19 +56,21 @@ const ProductDetail = (props) => {
           {props.user && (
             <div className="button-container">
               <button className="add-button" onClick={toCart}>
-                  add to cart
+                add to cart
               </button>
-              <button className="edit-button">
-                <Link
-                  className="edit-link"
-                  to={`/products/${product._id}/edit`}
-                >
-                  edit
-                </Link>
-              </button>
-              <button className="delete-button" onClick={deleteProd}>
-                delete
-              </button>
+              <div className="edit-delete">
+                <button className="edit-button">
+                  <Link
+                    className="edit-link"
+                    to={`/products/${product._id}/edit`}
+                  >
+                    edit
+                  </Link>
+                </button>
+                <button className="delete-button" onClick={deleteProd}>
+                  delete
+                </button>
+              </div>
             </div>
           )}
         </div>
