@@ -5,8 +5,8 @@ export default function Review() {
 
   return (
     <div className="review-container">
-      <h2>Amazing Customer Satisfaction</h2>
-      <h3>Avg. Rating 4.9 <span className="fa fa-star checked"></span>
+      <h2>amazing customer satisfaction</h2>
+      <h3>avg. rating 4.9 <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
