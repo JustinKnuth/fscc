@@ -13,6 +13,12 @@ html {
   justify-content: space-around;
 }
 
+.coffee-news-container{
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: hotpink;
+}
+
 #statement {
   background-color: rgb(130, 130, 130, 0.5);
   height: fit-content;
@@ -76,11 +82,17 @@ h2#shop {
   height: 45vw;
   
 }
+.review-container h2 {
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: hotpink;
+}
 
 .slider-control-centerright,
 .slider-control-centerleft {
   font-size: 8px;
   background:none;
+  margin: 0 10px;
   
 }
 div.slider-control-bottomcenter{
