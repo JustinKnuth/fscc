@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 
 const Cart = (props) => {
   const [cartItems, setCartItems] = useState([])
+  const [toggleFetch, setToggleFetch] = useState([false])
   const { id } = useParams();
 
   useEffect(() => {
@@ -14,8 +15,9 @@ const Cart = (props) => {
       const cartItems = await GetCart(id)
       setCartItems(cartItems)
     }
+    console.log("Is it running?")
     fetchCartItems()
-  }, [])
+  }, [toggleFetch])
 
   if (!cartItems) {
     return (
@@ -35,10 +37,9 @@ const Cart = (props) => {
       name={cartItem.name}
       price={cartItem.price}
       key={index}
+      setToggleFetch={setToggleFetch}
       className="cartItem" />
   ))
-
-console.log(cartItems)
   return (
     <Layout user={props.user}>
       <h3>Cart</h3>
