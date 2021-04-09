@@ -1,0 +1,17 @@
+/* *{
+border-style: solid;
+} */
+.cart-table{
+  
+  width:100%;
+  
+
+}
+
+@media screen and (max-width:450px){
+  .cart-table-header{
+    font-size:1em;
+  }
+
+
+}
