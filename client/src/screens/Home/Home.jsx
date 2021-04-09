@@ -4,8 +4,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import Carousel from "nuka-carousel";
 import Review from '../../components/Reviews/Review';
 import "./Home.css";
-import axios from "axios";
-import News from "../../components/News/News"
+
 
 export default function Home(props) {
   const [autoplay, setAutoplay] = useState(false);
@@ -21,16 +20,7 @@ export default function Home(props) {
   }, []);
 
 
-  useEffect(() => {
-    const getNews = async () => {
-      let url = "https://arcane-badlands-92920.herokuapp.com/https://newsapi.org/v2/everything?qInTitle=coffee&pageSize=6&language=en&sortBy=popularity&apiKey=90227dcd441a4362b5c3669eb2b7e229"
-      let res = await axios.get(url)
-      console.log(res.data.articles)
-      setNews(res.data.articles)
-
-    }
-    getNews()
-  }, [])
+  
 
 
 
@@ -127,14 +117,7 @@ export default function Home(props) {
 
       <Review />
 
-      <h2 className="coffee-news-container">coffee news</h2>
-
-      {news.map((item, index) => (
-        <News key={index}
-          article={item}
-          index={index} />
-      ))}
-    </div>
+       </div>
 
   );
 }
